@@ -1,0 +1,335 @@
+
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">My Portfolio</div>
+                <div class="masthead-heading text-uppercase">I've git a lot of dev experience !</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Check it Out!</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Skills</h2>
+                    <h3 class="section-subheading text-muted">Here's my Top 3 Skills</h3>
+                </div>
+
+                 <div class="row text-center">
+            <% @skills.each do |skill| %>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas <%= skill.icon%> fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading"><%= skill.name %></h4>
+                <p class="text-muted"><%= skill.description %></p>
+            </div>
+            <% end %>
+        </div>
+            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Some of My Projects Are given Below :</h3>
+                </div>
+                <div class="row">
+  <div class="row">
+    <div class="col-lg-4 col-sm-6 mb-4">
+        <!-- Project 1 - MERN -->
+        <div class="portfolio-item">
+            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+               
+                <img class="img-fluid" src="https://www.instructionalsolutions.com/hubfs/word-read-aloud-tool.jpg#keepProtocol" alt="MERN Project" />
+            </a>
+            <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">MERN Blog Platform</div>
+                <div class="portfolio-caption-subheading text-muted">A full-stack blogging application built using MongoDB, Express.js, React, and Node.js.</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4 col-sm-6 mb-4">
+        <!-- Project 2 - Ruby on Rails -->
+        <div class="portfolio-item">
+            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                
+                <img class="img-fluid" src="https://neilpatel.com/wp-content/uploads/2015/04/ecommerce.jpg" alt="Ruby on Rails Project" />
+            </a>
+            <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">E-commerce with Ruby on Rails</div>
+                <div class="portfolio-caption-subheading text-muted">A scalable e-commerce web application using Ruby on Rails and PostgreSQL.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-6 mb-4">
+        <!-- Project 3 - Django -->
+        <div class="portfolio-item">
+            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                
+                <img class="img-fluid" src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2" alt="Django Project" />
+            </a>
+            <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Django Task Manager</div>
+                <div class="portfolio-caption-subheading text-muted">A task management tool built with Django and SQLite for tracking productivity.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <!-- Project 4 - Spring Boot -->
+        <div class="portfolio-item">
+            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                
+                <img class="img-fluid" src="https://www.cnet.com/personal-finance/assets/uploads/resize/1149dab9bcfeb6dfe75fc2f7df9ac3db6be6b7a3/m1/2023/06/OnlineBankingGettyImages01-scaled.jpg?auto=webp" alt="Spring Boot Project" />
+            </a>
+            <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Spring Boot Banking App</div>
+                <div class="portfolio-caption-subheading text-muted">A secure banking application using Spring Boot, Hibernate, and MySQL.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+        <!-- Project 5 - MERN -->
+        <div class="portfolio-item">
+            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                
+                <img class="img-fluid" src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e" alt="MERN Project" />
+            </a>
+            <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">MERN Social Media App</div>
+                <div class="portfolio-caption-subheading text-muted">A social media application built with MERN stack and Firebase authentication.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-6">
+        <!-- Project 6 - Django -->
+        <div class="portfolio-item">
+            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                
+                <img class="img-fluid" src="https://jaypee15.github.io/portfolio/django-chatbot.png" alt="Django Project" />
+            </a>
+            <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Django AI Chatbot</div>
+                <div class="portfolio-caption-subheading text-muted">An AI-powered chatbot built using Django, TensorFlow, and NLP.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About Me</h2>
+                    <h3 class="section-subheading text-muted">I'm Rajindra kumar Sah . Here is my some Career Information</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="startbootstrap-agency-gh-pages/assets/img/about/1.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2007-2017</h4>
+                                <h4 class="subheading">Our Humble Beginnings (1-10 Class)</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">I consistently excelled in academics throughout my schooling, earning top positions in my class during primary and middle school. I participated in and won various school-level competitions, such as quiz contests and science exhibitions, and represented my school in debate competitions. During my secondary education, I achieved distinction in all subjects and scored a [specific result, e.g., GPA 3.15] in my SEE exams, demonstrating strong academic performance and dedication.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="startbootstrap-agency-gh-pages/assets/img/about/2.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2017 - 2019</h4>
+                                <h4 class="subheading">Higher Secondary Education</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">I pursued Computer Science during my Class 11 and 12, where I developed a solid foundation in programming, data structures, and algorithms, along with core subjects like Physics, Mathematics, and English. I excelled academically, achieving distinction in both years, and actively participated in coding competitions and IT-related projects, which enhanced my practical skills and problem-solving abilities.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="startbootstrap-agency-gh-pages/assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>May 2020 - April 2024</h4>
+                                <h4 class="subheading">Graduation on Computer Enginering</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">I completed my Bachelor's degree in Computer Science Engineering, where I gained in-depth knowledge of programming, algorithms, database management, networking, and software development. Throughout my studies, I worked on various projects, including [specific project, e.g., "developing a web-based inventory management system"], which honed my technical and analytical skills. I also participated in hackathons and technical seminars, achieving strong academic performance and developing a solid foundation for my career in technology.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="startbootstrap-agency-gh-pages/assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>May 2024 - present</h4>
+                                <h4 class="subheading">Built Different Types of Web and Mobile Apps</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">After graduating in Computer Science Engineering, I have developed various web and mobile applications, leveraging technologies such as HTML, CSS, JavaScript, React, Node.js, Flutter, and React Native. These projects include [mention specific examples, e.g., "a real-time chat application, an e-commerce platform, and a fitness tracking mobile app"], focusing on creating responsive designs, seamless user interfaces, and scalable back-end systems. Through these experiences, I have enhanced my technical expertise, problem-solving skills, and ability to deliver high-quality software solutions tailored to user needs.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Hire me :
+                                rajindrasah.itcs
+                                <br>@gmail.com
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">Meet the talented individuals who drive our success and bring innovation to everything we do.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="startbootstrap-agency-gh-pages/assets/img/team/1.jpg" alt="..." />
+                            <h4>Rabindra Shah</h4>
+                            <p class="text-muted">Lead Web Designer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="startbootstrap-agency-gh-pages/assets/img/team/2.jpg" alt="..." />
+                            <h4>Sunita Subedi</h4>
+                            <p class="text-muted">Backend Developer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="startbootstrap-agency-gh-pages/assets/img/team/logo1.jpg" alt="..." />
+                            <h4>It's me : Rajindra Shah</h4>
+                            <p class="text-muted">Full-Stack Developer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Our team consists of passionate and highly skilled professionals dedicated to delivering innovative web and mobile applications. Each team member brings unique expertise and creativity, ensuring the success of every project we undertake</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-->
+        <div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="startbootstrap-agency-gh-pages/assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="startbootstrap-agency-gh-pages/assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="startbootstrap-agency-gh-pages/assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="startbootstrap-agency-gh-pages/assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">You can directly Reach Us by  <b style="color: white;">Gmail : rajindrasah.itcs@gmail.com </b></h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Rajindra's Portfolio - Copyright &copy; All Rights </div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <h7>Follow Us on Social Media's</h7>
+                        <br>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">by Rajindra k. Shah </a>
+                        <a class="link-dark text-decoration-none" href="#!">Back to Top👆</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
