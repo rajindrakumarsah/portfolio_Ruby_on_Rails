@@ -1,5 +1,5 @@
 THis is Rajindra kumar sah.
-If you Like my codes . Recruit Me : rajindrasah.itcs@gmail.com
+If you Like my codes . Recruit Me by sending Gmail : rajindrasah.itcs@gmail.com
 
 projects images are given below : 
 ![Screenshot 2025-02-04 222416](https://github.com/user-attachments/assets/b664362b-a4c7-4639-9b95-422c9b3466ab)
